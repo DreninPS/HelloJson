@@ -16,12 +16,17 @@ public class FirstApi {
     public static void main(String[] args) throws ClientProtocolException, IOException {
         HttpClient client = new DefaultHttpClient();
         HttpGet request = new HttpGet("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5");
+
+        try {
         HttpResponse response = client.execute(request);
         BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
+        List<Data> data = new Gson().fromJson(rd, new TypeToken<List<Data>>() {}.getType());
+            System.out.println(data);
+        }
+        catch (Exception e) {
+            System.out.println("Нет ответа или Интернета");
+        }
 
-        List<Data> data = new Gson().fromJson(rd, new TypeToken<List<Data>>(){}.getType());
-
-        System.out.println(data);
 
     }
     public class Data{
