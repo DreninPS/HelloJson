@@ -1,3 +1,4 @@
+import com.google.gson.reflect.TypeToken;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
@@ -8,6 +9,7 @@ import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
 
 public class FirstApi {
 
@@ -16,21 +18,10 @@ public class FirstApi {
         HttpGet request = new HttpGet("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5");
         HttpResponse response = client.execute(request);
         BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
-        String lineOne = "[{\"ccy\":\"USD\",\"base_ccy\":\"UAH\",\"buy\":\"24.25000\",\"sale\":\"24.70000\"}]";
-        String line = "";
-        System.out.println(line);
 
-        while ((line = rd.readLine()) != null) {
-            System.out.println(line);
-       // lineOne=line;
-        }
-        System.out.println(lineOne);
+        List<Data> data = new Gson().fromJson(rd, new TypeToken<List<Data>>(){}.getType());
 
-        Data data = new Gson().fromJson(lineOne, Data.class);
-//        System.out.println("ccy = "+data.ccy+"Base ccy = "+data.base_ccy);
-//        System.out.println(data);
-//        Gson data = new Gson().fromJson(line, Gson.class);
-//        System.out.println("ccy = "+data.ccy+"Base ccy = "+data.base_ccy);
+        System.out.println(data);
 
     }
     public class Data{
@@ -39,11 +30,14 @@ public class FirstApi {
         public String buy;
         public String sale;
 
-//        @Override
- //       public String toString(){
- //           return "Movie [ccy=" + ccy + ", director=" + base_ccy + ",actors=" + buy + "]";
-//        }
-
+        @Override
+        public String toString() {
+            return '\n' + "Exchange " +
+                    "ccy='" + ccy + '\'' +
+                    ", baseCcy='" + base_ccy + '\'' +
+                    ", buy='" + buy + '\'' +
+                    ", sale='" + sale + '\'';
+        }
 
         public String getCcy() {
             return ccy;

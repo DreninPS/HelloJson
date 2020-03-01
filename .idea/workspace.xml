@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e0901a4-bf93-490c-81bb-dd16b7ee8645" name="Default Changelist" comment="" />
+    <list default="true" id="8e0901a4-bf93-490c-81bb-dd16b7ee8645" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/FirstApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FirstApi.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FirstApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="178">
+              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1234#1235#0" expanded="true" />
@@ -71,6 +73,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -85,6 +90,7 @@
     <option name="width" value="1939" />
     <option name="height" value="1057" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -154,6 +160,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -198,16 +205,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582876162702</updated>
-      <workItem from="1582876164815" duration="8392000" />
+      <workItem from="1582876164815" duration="13537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8392000" />
+    <option name="totallyTimeSpent" value="13537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1477" height="797" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -267,8 +273,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FirstApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="178">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1234#1235#0" expanded="true" />
